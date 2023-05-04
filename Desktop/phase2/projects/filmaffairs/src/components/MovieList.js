@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import "./MovieList.css";
 import "./Trending.css";
@@ -72,9 +73,6 @@ function MovieList() {
 }
 
 export default MovieList;
-
-
-
 
 
 // import React, { useState, useEffect } from "react";
