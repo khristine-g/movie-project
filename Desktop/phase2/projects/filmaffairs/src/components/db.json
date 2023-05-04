@@ -1,0 +1,46 @@
+{
+  "vacationHomes": [
+    {
+      "id": 1,
+      "name": "Beach House",
+      "location": "Malibu, CA",
+      "description": "Stunning beachfront home with breathtaking ocean views",
+      "image": "https://www.zochagroup.com/wp-content/uploads/2021/02/the-oracle-los-angeles-villa-rental-feature.jpg",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "maxGuests": 8,
+      "pricePerNight": 1000,
+      "availableDates": [
+        {
+          "startDate": "2023-06-01",
+          "endDate": "2023-06-15"
+        },
+        {
+          "startDate": "2023-06-20",
+          "endDate": "2023-07-05"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mountain Retreat",
+      "location": "Aspen, CO",
+      "description": "Luxury chalet nestled in the mountains with private hot tub",
+      "image": "https://i.insider.com/58a5d01f01fe58fe4f8b47c3?width=1000&format=jpeg&auto=webp",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "maxGuests": 10,
+      "pricePerNight": 1500,
+      "availableDates": [
+        {
+          "startDate": "2023-07-10",
+          "endDate": "2023-07-20"
+        },
+        {
+          "startDate": "2023-08-01",
+          "endDate": "2023-08-15"
+        }
+      ]
+    }
+  ]
+}
