@@ -2,11 +2,12 @@ import React from "react";
 import MovieList from "./components/MovieList";
 import Trending from "./components/Trending";
 import Popular from "./components/Popular";
-import MovieForm from "./components/MovieForm";
 import "./components/MovieList.css"
 import "./components/Trending.css"
 import "./components/Popular.css"
-import "./components/MovieForm.css";
+import Footer from './components/Footer';
+import "./App.css"; 
+
 
 
 
@@ -19,7 +20,8 @@ function App() {
       <MovieList />
       <Trending/>
       <Popular/>
-      <MovieForm/>
+      <Footer/>
+      
       
       
     </div>
