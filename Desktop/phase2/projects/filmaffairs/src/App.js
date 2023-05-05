@@ -1,5 +1,3 @@
-import React from "react";
-
 
 import "./components/MovieList.css"
 import "./components/Trending.css"
