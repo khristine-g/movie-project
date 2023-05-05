@@ -1,31 +1,24 @@
 import React from "react";
-import MovieList from "./components/MovieList";
-import Trending from "./components/Trending";
-import Popular from "./components/Popular";
-import MovieForm from "./components/MovieForm";
+
+
 import "./components/MovieList.css"
 import "./components/Trending.css"
 import "./components/Popular.css"
-import "./components/MovieForm.css";
-
-
-
+import Home from "./pages/Home";
+import { Route, Routes } from "react-router-dom";
+import Genre from "./pages/Genre";
+import Search from "./pages/Search";
 
 
 
 function App() {
   return (
-    <div>
-      <MovieList />
-      <Trending/>
-      <Popular/>
-      <MovieForm/>
-      
-      
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/genre/:name/:id" element={<Genre />} />
+      <Route path="/search/:name" element={<Search />} />
+    </Routes>
   );
 }
 
 export default App;
-
-
