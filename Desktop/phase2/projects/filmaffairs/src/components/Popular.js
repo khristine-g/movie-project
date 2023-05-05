@@ -40,6 +40,9 @@ function Popular() {
               <button className="back-btn" onClick={handleGoBack}>
                 Go Back
               </button>
+              <button className="back-btn" >
+               Watch Trailer
+              </button>
             </div>
           </div>
         ) : (

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Trending.css";
 function Trending() {
   const url =
     "https://api.themoviedb.org/3/trending/movie/day?api_key=36abea3582203c7689f8273cff6a9daa";
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
   const [selectedMovie, setSelectedMovie] = useState(null);
   const fetchInfo = () => {
     return fetch(url)
@@ -35,6 +37,7 @@ function Trending() {
           <div className="movie-release">Release Date: {selectedMovie.release_date}</div>
           <div className="movie-overview">Overview: {selectedMovie.overview}</div>
           <button className ="back-btn"onClick={handleBackClick}> Go Back</button>
+          <button  className= "back-btn" onClick={navigate(`/trailers/${selectedMovie.id}`)}>Watch Trailer</button>
         </div>
       ) : (
         <div className="movies-container">

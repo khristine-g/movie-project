@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./MovieList.css";
 import "./Trending.css";
 function MovieList() {
   const url =
     "https://api.themoviedb.org/3/discover/movie?api_key=36abea3582203c7689f8273cff6a9daa&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1";
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [showAllMovies, setShowAllMovies] = useState(true);
   const fetchInfo = () => {
@@ -25,7 +27,7 @@ function MovieList() {
   };
   return (
     <div className="movie-list">
-        {/* <h2 className="heading">Free To Watch</h2> */}
+      {/* <h2 className="heading">Free To Watch</h2> */}
       {showAllMovies ? (
         data.map((movie) => (
           <div
@@ -54,8 +56,9 @@ function MovieList() {
               <div>Rating: {selectedMovie.vote_average}</div>
               <div>Release Date: {selectedMovie.release_date}</div>
               <div>Overview: {selectedMovie.overview}</div>
-              <button  className= "back-btn"onClick={handleGoBack}>Go Back</button>
-            </div>
+              <button className="back-btn" onClick={handleGoBack}>Go Back</button>
+              </div>
+              <button className="back-btn" onClick={navigate(`/trailers/${selectedMovie.id}`)}>Watch Trailer</button>
           </div>
         </div>
       )}
