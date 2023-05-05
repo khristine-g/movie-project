@@ -1,38 +1,30 @@
 import React, { useState, useEffect } from "react";
 import "./Trending.css";
-
 function Trending() {
   const url =
     "https://api.themoviedb.org/3/trending/movie/day?api_key=36abea3582203c7689f8273cff6a9daa";
   const [data, setData] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
-
   const fetchInfo = () => {
     return fetch(url)
       .then((res) => res.json())
       .then((d) => setData(d.results));
   };
-
   useEffect(() => {
     fetchInfo();
   }, []);
-
   const trendingMovies = data.filter((movie) => movie.popularity > 20);
-
   const handleMovieClick = (movie) => {
     setSelectedMovie(movie);
   };
-
   const handleBackClick = () => {
     setSelectedMovie(null);
   };
-
   return (
     <div className="trending">
       <h2 className="heading">Trending Movies</h2>
       {selectedMovie ? (
         <div className="movie-details">
-          <button className ="back-btn"onClick={handleBackClick}> Go Back</button>
           <img
             src={`https://image.tmdb.org/t/p/w500/${selectedMovie.poster_path}`}
             alt={selectedMovie.title}
@@ -42,6 +34,7 @@ function Trending() {
           <div className="movie-rating">Rating: {selectedMovie.vote_average}</div>
           <div className="movie-release">Release Date: {selectedMovie.release_date}</div>
           <div className="movie-overview">Overview: {selectedMovie.overview}</div>
+          <button className ="back-btn"onClick={handleBackClick}> Go Back</button>
         </div>
       ) : (
         <div className="movies-container">
@@ -60,5 +53,4 @@ function Trending() {
     </div>
   );
 }
-
 export default Trending;

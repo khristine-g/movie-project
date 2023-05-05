@@ -14,7 +14,7 @@ function LoginForm() {
           <input type="password" id="password" name="password" required />
         </div>
         <button type="submit">Login</button>
-        <p>Don't have an account? <a href="#">Sign up</a></p>
+        {/* <p>Don't have an account? <a href="#">Sign up</a></p> */}
       </form>
     </div>
   );
