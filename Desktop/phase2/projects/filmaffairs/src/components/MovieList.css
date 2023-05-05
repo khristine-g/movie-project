@@ -1,3 +1,4 @@
+
 .movie-list {
   display: flex;
   flex-wrap: wrap;
@@ -41,11 +42,11 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: orangered;
+  
   
 }
 .back-btn{
-  /* background-color: black; */
+  background-color: black; 
   color: white;
   
 
@@ -57,11 +58,11 @@
 .heading{
 
   color: blue;
-}
+} 
 
 
 
-/* .card-container {
+.card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -104,4 +105,4 @@
   margin: 0;
   font-size: 1.2rem;
   font-weight: bold;
-} */
+}
