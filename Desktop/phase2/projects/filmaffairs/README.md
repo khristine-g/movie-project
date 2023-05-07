@@ -1,3 +1,35 @@
+# FilmAffairs
+FilmAffairs is a web application that allows users to search for movies by title or genre, view movie details, and watch movie trailers directly on the website. The project is built using ReactJS and APIs from The Movie Database (TMDb) and YouTube.
+
+# Features
+Search Movies: Users can search for movies by title or genre and get the list of movies that match the search query.
+Movie Details: Users can see detailed information about a movie.
+Movie Trailer: Users can watch the movie trailer directly on the website.
+
+# Technologies
+The following technologies are used in the FilmAffairs project:
+
+# Frontend: ReactJS, HTML, CSS, VITE
+# APIs: The Movie Database (TMDb) API, YOUTUBE-API
+ # Installation Guide
+To install and run the project on your local machine, follow these steps:
+
+# Clone the repo: git clone https://github.com/khristine-g/movie-project.git
+Install dependencies: npm install
+Start the development server: npm run dev
+# Open http://localhost:3000 in your web browser to view the application.
+Contributors
+The following contributors have worked on the FilmAffairs project:
+
+* Aisha
+* Khristine
+* Steven
+
+# Credits
+# The Movie Database (TMDb) API: https://www.themoviedb.org/documentation/api
+# YOUTUBE-API: https://developers.google.com/youtube/v3/docs
+* License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
