@@ -1,58 +1,81 @@
-.navbar {
-  /* position: fixed; */
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+.movie-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar {
-  width: 100%;
-  background-color: #555;
-  overflow: auto;
-}
-
-/* Navbar links */
-.navbar a {
-  float: left;
-  text-align: center;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Navbar links on mouse-over */
-.navbar a:hover {
-  background-color: #000;
-}
-
-/* Current/active navbar link */
-.active {
-  background-color: #04AA6D;
-}
-
-.sm-cards-collections{
-  display: flex;
-  gap: 20px;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px;
+  background-color: rgb(37, 35, 35);
 }
-
-
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
+.movie-item {
+  width: calc(20% - 20px);
+  margin: 20px 10px;
+  text-align: center;
 }
-.main-search {
+.movie-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.movie-title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.movie-details {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.movie-details-container {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.back-btn{
+  background-color: black;
+  color: white;
+  border-radius: 10%;
+}
+.heading{
+  color: blue;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.card {
+  width: calc(20% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+.card-content h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+.card-content p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
