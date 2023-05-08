@@ -21,7 +21,7 @@ const Genre = () => {
 
     console.log(searchedData);
     return (
-        <div className="collection-main">
+        <div className="collection-main " style = {{backgroundColor:""}}>
             <h1 className="collection-name">{name}</h1>
             <div className="sm-cards-collections">
                 {searchedData.map((data) => (
